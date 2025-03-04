@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/main/docs/logo-with-text.png" alt="GitLab Classrooms Logo" width="350">
+  <img src="docs/logo-with-text.png" alt="GitLab Classrooms Logo" width="350">
 </p>
 
 <p align="center">
