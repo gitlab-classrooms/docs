@@ -1,0 +1,15 @@
+deploy:
+  image:
+    name: clevercloud/clever-tools
+    entrypoint: ["/bin/sh", "-c"]
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_REF_NAME == 'main'
+  script:
+    - clever link $CC_APP_ID
+    - clever deploy
+  environment:
+    name: production
+    deployment_tier: production
+    url: https://docs.gitlab-classrooms.org
+    action: start
